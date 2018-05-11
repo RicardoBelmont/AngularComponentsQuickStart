@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { FormsModule } from '@angular/forms';
+
+// Routes
+import {APP_ROUTING} from './app.routes';
 
 import { AppComponent } from './app.component';
 import { ShowComponent } from './components/show/show.component';
@@ -18,7 +22,9 @@ import { Comp3Component } from './components/comp3/comp3.component';
     Comp3Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    APP_ROUTING,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
