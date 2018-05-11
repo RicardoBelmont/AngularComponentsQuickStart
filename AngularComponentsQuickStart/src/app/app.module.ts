@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
+import { Ng2HandySyntaxHighlighterModule } from 'ng2-handy-syntax-highlighter';
 
 // Routes
 import {APP_ROUTING} from './app.routes';
@@ -24,7 +25,8 @@ import { Comp3Component } from './components/comp3/comp3.component';
   imports: [
     BrowserModule,
     APP_ROUTING,
-    FormsModule
+    FormsModule,
+    Ng2HandySyntaxHighlighterModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
